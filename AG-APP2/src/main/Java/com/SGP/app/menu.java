@@ -37,22 +37,22 @@ public class menu {
     }
 
     private void cadastrar() {
-        subtitulo("CADASTRAR FUTURO MR.OLIMPIA");
-        try {
-            System.out.print("  Nome       : ");
-            String nome = scanner.nextLine().trim();
+    subtitulo("CADASTRAR FUTURO MR.OLIMPIA");
+    try {
+        System.out.print("  Nome : ");
+        String nome = scanner.nextLine().trim();
 
-            Aluno a = new Aluno(proximoId, nome);
-            proximoId++;
-            alunos.add(a);
+        Aluno a = new Aluno(proximoId, nome);
+        proximoId++;
+        alunos.add(a);
 
-            System.out.println("\n  pode ir puxar ferro a vossa vontade agora em patrao, hora de ficar monstro!");
-            System.out.println(a);
-        } catch (IllegalArgumentException e) {
-            System.out.println("\n  kkkkkkkkkkkkk vc e uma lenda irmao, fez dar erro aqui na parada: " + e.getMessage());
-        }
-        pausar();
+        System.out.println("\n  pode ir puxar ferro a vossa vontade agora em patrao, hora de ficar monstro!");
+        System.out.println(a);
+    } catch (IllegalArgumentException e) {
+        System.out.println("\n  kkkkkkkkkkkkk vc e uma lenda irmao, fez dar erro aqui na parada: " + e.getMessage());
     }
+    pausar();
+}
 
     private void listarTodos() {
         subtitulo("TODOS OS FERAS (" + alunos.size() + ")");
@@ -92,7 +92,7 @@ public class menu {
         System.out.println("  vc conseguiu errar isso? Me ajuda a te ajudar ne.");
     }
     pausar();
-}3
+}
 
     private void remover() {
         subtitulo("REMOVER CONTRIBUINTE");
@@ -111,9 +111,9 @@ public class menu {
     }
 
     private void cabecalho() {
-        System.out.println("\n  ======================================");
-        System.out.println("        O MELHOR SISTEMA DE ACADEMIA DA CIDADE - SGP      ");
-        System.out.println("  ======================================");
+        System.out.println("\n  =================================================================================");
+        System.out.println("        O MELHOR SISTEMA DE ACADEMIA DA CIDADE só não o mais completo - SGP      ");
+        System.out.println("  ===================================================================================");
     }
 
     private void subtitulo(String titulo) {
